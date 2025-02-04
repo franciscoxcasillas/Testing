@@ -10,13 +10,16 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Color.red
-            Circle()
-                .fill(Color.yellow)
-                .frame(width: 200, height: 200)
-            Text("Layered View")
-                .foregroundColor(.white)
-        }
+                    Color.blue.edgesIgnoringSafeArea(.all) // Fondo a pantalla completa
+
+                    Circle()
+                        .fill(Color.yellow)
+                        .frame(width: 250, height: 250)
+
+                    Text("SwiftUI Rocks!")
+                        .font(.title)
+                        .foregroundColor(.white)
+                }
     }
 }
 
