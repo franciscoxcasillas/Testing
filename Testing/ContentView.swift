@@ -10,7 +10,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-                    Color.blue.edgesIgnoringSafeArea(.all) // Fondo a pantalla completa
+            LinearGradient(gradient: Gradient(colors: [.blue, .green]),
+                              startPoint: .top,
+                              endPoint: .bottom)
+                   .edgesIgnoringSafeArea(.all)
 
                     Circle()
                         .fill(Color.yellow)
